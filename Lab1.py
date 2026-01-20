@@ -108,8 +108,6 @@ AI_Students = [["Alice", 85], ["Bob", 92], ["Charlie", 78]]
 
 #Print only one activity for the given inputs
 
-
-
 #----------------------------------------------------------- BEGIN WORKING WITH NUMpy
 #Instructions on sheet 1.3, excercise at the bottom of the sheet.
 import numpy as np
@@ -150,6 +148,10 @@ if(module1_average > module2_average): # If module one's average is higher...
 else: # Else, if module two's average is higher
     print("Module 2 had the higher score, averaging", module2_average)
 print("")
+
+#---------------------------------------------------------------------------------------------------
+
+
 
 
 
