@@ -67,7 +67,69 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 
 #plt.show()
 
-#----------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------- #Counting the "Samples per class label" (Drawing a bar chart based on the number of samples)
 
+#import matplotlib.pyplot as plt
 
+#flowers_df['species'].value_counts().plot(kind="bar")
 
+#plt.show()
+
+#---------------------------------------------------------------------------------------------------------- #Creating a box plot using the petal length
+#import seaborn as sbn
+#import matplotlib.pyplot as plt
+
+#sbn.boxplot(
+    #data=flowers_df,
+    #y='petal_length',               # vertical boxplot  ; x: horizontal
+    #color='skyblue',          # example dark:skyblue
+    #linewidth=1,             # edge thickness      
+    #fliersize=2,               # size of outlier points
+    #flierprops=dict(marker = "o", markerfacecolor= (0.7, 0.2, 0.4), markersize= 5, alpha= 0.7),   # customize outliers
+    #medianprops=dict(color='black', linewidth= 2)     # median line
+#)
+
+#plt.show()
+
+#---------------------------------------------------------------------------------------------------------- #Using a violin plot 
+
+#import seaborn as sbn
+#import matplotlib.pyplot as plt
+
+#sbn.violinplot(
+    #data=flowers_df,
+    #x='species',       # categorical variable
+    #y=5,    # numeric variable
+    #palette='Set2',        # multiple colors
+    #hue='species',         #splits each species
+    #inner='box',
+    #linewidth=2,
+    #density_norm='width'   # Each violin is scaled to fit the same width, so all categories look equally wide, even if they have different numbers of observations.
+#)
+
+#plt.show()
+
+#----------------------------------------------------------------------------------------------------------  #Creating a scatter plot
+
+#import seaborn as sbn
+#import matplotlib.pyplot as plt
+
+#sbn.scatterplot(
+    #data=flowers_df,    # dataframe name
+    #x='petal_length',   # numeric variable on x-axis
+    #y='petal_width',    # numeric variable on y-axis
+    #hue='species',    # color by class/species
+    #style='species',   # different marker style by class
+    #palette='Set1'      # color palette
+#)
+
+#plt.show()
+
+#---------------------------------------------------------------------------------------------------------- #Creating a Pair Plot
+
+import seaborn as sbn
+import matplotlib.pyplot as plt
+
+sbn.pairplot(flowers_df,hue="species")
+
+plt.show()
