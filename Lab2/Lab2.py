@@ -63,8 +63,11 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 
 #fig, ax = plt.subplots(figsize=(5, 5))
 
-##seaborn.histplot(flowers_df['petal_length'])
+#seaborn.histplot(flowers_df['petal_length'])
 
 #plt.show()
 
 #----------------------------------------------------------------------------------------------------------
+
+
+
