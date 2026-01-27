@@ -127,9 +127,40 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 
 #---------------------------------------------------------------------------------------------------------- #Creating a Pair Plot
 
-import seaborn as sbn
-import matplotlib.pyplot as plt
+#import seaborn as sbn
+#import matplotlib.pyplot as plt
 
-sbn.pairplot(flowers_df,hue="species")
+#sbn.pairplot(flowers_df,hue="species")
 
-plt.show()
+#plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------------------------------------------------------------------------------------------- 
+#Detecting and handling missing/null values
+
+#Load the dataset
+#Display the column head and data
+#Count the number of rows and columns in the dataset
+
+
+
+#print(flowers_df.isna()) #Can also use .isnull                                                                              #Detect Missing Values
+
+#print(flowers_df[flowers_df[['sepal_length','sepal_width','petal_length', 'petal_width', 'species']].isna()].any(axis=1))   #Finding columns with missing values
+
+#variable = flowers_df['petal_length'].isna().sum()                                                                           #Count missing values
+#print(variable)
+
+
+
