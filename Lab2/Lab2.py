@@ -134,26 +134,12 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 
 #plt.show()
 
-
-
-
-
-
-
-
-
-
-
-
-
 #---------------------------------------------------------------------------------------------------------- 
 #Detecting and handling missing/null values
 
 #Load the dataset
 #Display the column head and data
 #Count the number of rows and columns in the dataset
-
-
 
 #print(flowers_df.isna()) #Can also use .isnull                                                                              #Detect Missing Values
 
@@ -162,5 +148,4 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 #variable = flowers_df['petal_length'].isna().sum()                                                                           #Count missing values
 #print(variable)
 
-
-
+flowers_df_updated = pd.read_csv('Iris_missing_values.csv') #Linking to the new CSV file which contains missing data
