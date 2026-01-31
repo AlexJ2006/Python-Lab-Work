@@ -149,3 +149,17 @@ flowers_df = pd.read_csv('Lab2/Iris.csv') #Linking to the csv file to use as the
 #print(variable)
 
 flowers_df_updated = pd.read_csv('Iris_missing_values.csv') #Linking to the new CSV file which contains missing data
+
+#flowers_df_updated['species'].dtype        #Obtaining the data type of the column
+
+
+#----------------------------------------------------------------------------------------------------------                     #MEAN inputation on a single column
+
+flowers_df_updated_2 = flowers_df_updated.copy()
+
+mean_value = flowers_df_updated_2['sepal_length'].mean()
+flowers_df_updated_2['sepal_length'].fillna(mean_value)
+
+flowers_df_updated_2['sepal_length'].isna().sum()
+
+
